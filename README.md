@@ -2,7 +2,23 @@
 
 Welcome to **MyTrip.AI**, a revolutionary platform that combines artificial intelligence with authentic travel experiences across India's beautiful villages and towns.
 
-## 🌟 Features
+<h2>Trip Budget Calculator</h2>
+
+<div class="trip-box">
+
+<label>Destination</label>
+<input type="text" id="place" placeholder="Enter destination">
+
+<label>Transport Cost (₹)</label>
+<input type="number" id="transport">
+
+<label>Hotel Cost Per Day (₹)</label>
+<input type="number" id="hotel">
+
+<label>Food Cost Per Day (₹)</label>
+<input type="number" id="food">
+
+<label>Number of Days</label>## 🌟 Features
 
 ### 🗺️ Destination Discovery
 - **8+ Handpicked Destinations**: From Kerala Backwaters to Ladakh Peaks
