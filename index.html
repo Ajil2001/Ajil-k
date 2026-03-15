@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTrip.AI - Experience India with AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">🧳 MyTrip.AI</div>
+        <ul class="nav-menu">
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#food">Food & Cuisine</a></li>
+            <li><a href="#pricing">Packages</a></li>
+            <li><a href="#ai-assistant">AI Trip Planner</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>MyTrip.AI</h1>
+        <p>Discover India Like Never Before – AI-Powered Travel Planning</p>
+        <div class="search-box">
+            <input type="text" id="departure" placeholder="📍 From Where?" />
+            <input type="text" id="destination" placeholder="🗺️ Where to?" />
+            <input type="number" id="budget" placeholder="💰 Budget (₹)" />
+            <button onclick="initializeTrip()">Plan My Trip</button>
+        </div>
+    </div>
+</header>
+
+<!-- Destinations Section -->
+<section id="destinations" class="section destinations-section">
+    <div class="container">
+        <h2>✨ Explore Indian Villages & Towns</h2>
+        <p class="section-subtitle">Authentic experiences in nature's lap</p>
+        <div class="cards-grid" id="destinationCards">
+            <!-- Cards populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Food & Cuisine Section -->
+<section id="food" class="section food-section">
+    <div class="container">
+        <h2>🍽️ Local Cuisines & Delicacies</h2>
+        <p class="section-subtitle">Taste the flavors of rural India</p>
+        <div class="food-grid" id="foodGrid">
+            <!-- Food items populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Packages Section -->
+<section id="pricing" class="section pricing-section">
+    <div class="container">
+        <h2>💳 Travel Packages</h2>
+        <p class="section-subtitle">Choose the perfect plan for your journey</p>
+        <div class="pricing-grid" id="pricingGrid">
+            <!-- Pricing cards populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- AI Assistant Section -->
+<section id="ai-assistant" class="section ai-section">
+    <div class="container">
+        <h2>🤖 AI Trip Planner - MyTrip.AI Assistant</h2>
+        <p class="section-subtitle">Get personalized itineraries powered by advanced AI</p>
+        <div class="ai-container">
+            <div class="ai-chat">
+                <div class="chat-window" id="chatWindow">
+                    <div class="ai-greeting">
+                        <p>👋 Hello! I'm your AI Travel Assistant. Tell me about your dream trip!</p>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="aiInput" placeholder="Ask me about destinations, food, prices, best time to visit..." />
+                    <button onclick="sendAIQuery()">Send</button>
+                </div>
+            </div>
+            <div class="ai-features">
+                <h3>What I Can Help With:</h3>
+                <ul>
+                    <li>✈️ Personalized itineraries</li>
+                    <li>💰 Budget optimization</li>
+                    <li>🌤️ Weather & best season</li>
+                    <li>🏨 Accommodation suggestions</li>
+                    <li>🍜 Food recommendations</li>
+                    <li>🚗 Travel logistics</li>
+                    <li>📸 Photo spot guides</li>
+                    <li>🎫 Event schedules</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <h2>📞 Get in Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2026 MyTrip.AI | Experience India, Sustainably</p>
+        <p>Powered by Advanced AI Travel Intelligence</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
